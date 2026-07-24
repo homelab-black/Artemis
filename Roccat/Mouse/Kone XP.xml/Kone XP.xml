@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ROCCAT Kone XP</Name>
+  <Description>Layout for the Roccat Kone XP LEDs</Description>
+  <Author>homelab black</Author>
+  <Type>Mouse</Type>
+  <Vendor>Roccat</Vendor>
+  <Model>Kone XP</Model>
+  <Width>76</Width>
+  <Height>140</Height>
+  <Leds>
+    <Led Id="Mouse1">
+      <X>23</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse2">
+      <X>23</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse3">
+      <X>26</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse4">
+      <X>26</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse5">
+      <X>29</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse6">
+      <X>29</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse7">
+      <X>32</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse8">
+      <X>32</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse9">
+      <X>33</X>
+      <Y>110</Y>
+      <Width>5mm</Width>
+      <Height>5mm</Height>
+    </Led>
+    <Led Id="Mouse10">
+      <X>48</X>
+      <Y>110</Y>
+      <Width>5mm</Width>
+      <Height>5mm</Height>
+    </Led>
+    <Led Id="Mouse11">
+      <X>52</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse12">
+      <X>52</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse13">
+      <X>55</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse14">
+      <X>55</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse15">
+      <X>58</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse16">
+      <X>58</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse17">
+      <X>61</X>
+      <Y>70</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse18">
+      <X>61</X>
+      <Y>90</Y>
+      <Width>2mm</Width>
+      <Height>10mm</Height>
+    </Led>
+    <Led Id="Mouse19">
+      <X>38</X>
+      <Y>67</Y>
+      <Width>10mm</Width>
+      <Height>18mm</Height>
+    </Led>
+    <Led Id="Mouse20">
+      <X>38</X>
+      <Y>34</Y>
+      <Width>10mm</Width>
+      <Height>19mm</Height>
+    </Led>
+  </Leds>
+  <CustomData xsi:type="LayoutCustomDeviceData">
+    <DeviceImage>ROCCAT-Kone-XP.jpg</DeviceImage>
+  </CustomData>
+</Device>
