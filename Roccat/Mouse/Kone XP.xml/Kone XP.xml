@@ -22,43 +22,43 @@
       <Height>10mm</Height>
     </Led>
     <Led Id="Mouse3">
-      <X>26</X>
+      <X>27</X>
       <Y>70</Y>
       <Width>2mm</Width>
       <Height>10mm</Height>
     </Led>
     <Led Id="Mouse4">
-      <X>26</X>
+      <X>27</X>
       <Y>90</Y>
       <Width>2mm</Width>
       <Height>10mm</Height>
     </Led>
     <Led Id="Mouse5">
-      <X>29</X>
+      <X>30</X>
       <Y>70</Y>
       <Width>2mm</Width>
       <Height>10mm</Height>
     </Led>
     <Led Id="Mouse6">
-      <X>29</X>
+      <X>30</X>
       <Y>90</Y>
       <Width>2mm</Width>
       <Height>10mm</Height>
     </Led>
     <Led Id="Mouse7">
-      <X>32</X>
+      <X>33</X>
       <Y>70</Y>
       <Width>2mm</Width>
       <Height>10mm</Height>
     </Led>
     <Led Id="Mouse8">
-      <X>32</X>
+      <X>33</X>
       <Y>90</Y>
       <Width>2mm</Width>
       <Height>10mm</Height>
     </Led>
     <Led Id="Mouse9">
-      <X>33</X>
+      <X>34</X>
       <Y>110</Y>
       <Width>5mm</Width>
       <Height>5mm</Height>
@@ -119,15 +119,15 @@
     </Led>
     <Led Id="Mouse19">
       <X>38</X>
-      <Y>67</Y>
-      <Width>10mm</Width>
-      <Height>18mm</Height>
-    </Led>
-    <Led Id="Mouse20">
-      <X>38</X>
       <Y>34</Y>
       <Width>10mm</Width>
       <Height>19mm</Height>
+    </Led>
+    <Led Id="Mouse20">
+      <X>38</X>
+      <Y>67</Y>
+      <Width>10mm</Width>
+      <Height>18mm</Height>
     </Led>
   </Leds>
   <CustomData xsi:type="LayoutCustomDeviceData">
