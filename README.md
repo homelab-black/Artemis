@@ -1,3 +1,33 @@
+# Artemis JISキーボード対応版（仮）
+本家のArtemisは英語レイアウト（US配列）を前提に実装されているため、JISレイアウト（日本語配列）のキーボードを使用した場合に、一部のキーが正常に発光しない問題があります。
+
+初回起動時にキーボードレイアウトを選択することは可能ですが、入力イベントを処理する内部コードがそのレイアウト情報を参照していないためです。完全な多言語対応には大幅な改修が必要となるため、本リポジトリでは **「英語キーボードのマッピングをJIS用に上書きする」** というアプローチで、実用性を最優先にした簡易対応を行いました。
+
+## 主な変更点
+- 英語キーボードと競合する部分の修正
+- 日本語キーボード独自に関するキー部分の修正
+
+## 仕様・制限事項
+- IME切り替えキーは非対応
+「半角/全角」キーおよび「カタカナ/ひらがな」キーについては、**意図的にキープレス（発光）の対象外**としています。これらのキーは押下時にWindowsのIME入力モードが切り替わるため、OSの仕様上「キーを離した（KeyUp）」というイベントが正常に取得できず、LEDが点灯し続けてしまうためです。
+- 動作環境
+Windows 11環境でのみ動作確認を行っています。Linux等の他OSにおける動作は未検証です。
+
+## 配布ファイル（ROCCAT製品向けレイアウト）
+私が所有している以下のデバイス向けに、自作したLEDマッピング用のXMLファイルおよび画像ファイルを同梱しています。同じ製品をお使いの方は参考にしてください。
+- ROCCAT Vulcan II Max（キーボード）
+- ROCCAT Kone XP（マウス）
+
+## ビルド方法（ご自身で実行ファイルを作成する場合）
+本リポジトリをビルドするには **.NET 10 SDK** が必要です。
+
+以下のコマンドでリリースビルドを行うことで、実行環境に .NET 10 ランタイムがインストールされていないPCでも、単体で動作（Self-Contained）させることができます。
+
+```
+dotnet publish .\Artemis\src\Artemis.UI.Windows\Artemis.UI.Windows.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=false
+```
+
+---
 # Artemis
 [![Master - Build](https://github.com/Artemis-RGB/Artemis/actions/workflows/master.yml/badge.svg)](https://github.com/Artemis-RGB/Artemis/actions/workflows/master.yml)
 [![GitHub release](https://img.shields.io/github/release/spoinkynl/Artemis.svg)](https://github.com/SpoinkyNL/Artemis/releases)
