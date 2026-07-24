@@ -63,7 +63,7 @@
     <PackageVersion Include="SkiaSharp" Version="2.88.9" />
     <PackageVersion Include="SkiaSharp.Vulkan.SharpVk" Version="2.88.9" />
     <PackageVersion Include="Splat.DryIoc" Version="17.1.1" />
-    <PackageVersion Include="StrawberryShake.Server" Version="15.1.11" />
+    <PackageVersion Include="StrawberryShake.Server" Version="16.5.1" />
     <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
     <PackageVersion Include="System.Text.Json" Version="10.0.1" />
     <PackageVersion Include="TextMateSharp.Grammars" Version="2.0.2" />

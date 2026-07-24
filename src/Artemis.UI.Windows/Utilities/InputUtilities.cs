@@ -253,10 +253,15 @@ public static class InputUtilities
             NativeMethods.VK_OEM_2 => KeyboardKey.OemQuestion,
             NativeMethods.VK_OEM_3 => KeyboardKey.OemTilde,
             NativeMethods.VK_OEM_4 => KeyboardKey.OemOpenBrackets,
-            NativeMethods.VK_OEM_5 => KeyboardKey.OemPipe,
+//            NativeMethods.VK_OEM_5 => KeyboardKey.OemPipe,
             NativeMethods.VK_OEM_6 => KeyboardKey.OemCloseBrackets,
             NativeMethods.VK_OEM_7 => KeyboardKey.OemQuotes,
-            NativeMethods.VK_OEM_102 => KeyboardKey.OemBackslash,
+//            NativeMethods.VK_OEM_102 => KeyboardKey.OemBackslash,
+            NativeMethods.VK_KANA => KeyboardKey.Katakana,
+            NativeMethods.VK_OEM_102 => KeyboardKey.Ro,
+            NativeMethods.VK_CONVERT => KeyboardKey.Henkan,
+            NativeMethods.VK_NONCONVERT => KeyboardKey.Muhenkan,
+            NativeMethods.VK_OEM_5 => KeyboardKey.Yen,
             _ => KeyboardKey.None
         };
     }
@@ -405,7 +410,12 @@ public static class InputUtilities
             KeyboardKey.OemCloseBrackets => NativeMethods.VK_OEM_6,
             KeyboardKey.OemQuotes => NativeMethods.VK_OEM_7,
             KeyboardKey.OemBackslash => NativeMethods.VK_OEM_102,
-            _ => 0
+            KeyboardKey.Katakana => NativeMethods.VK_KANA,
+            KeyboardKey.Ro => NativeMethods.VK_OEM_102,
+            KeyboardKey.Henkan => NativeMethods.VK_CONVERT,
+            KeyboardKey.Muhenkan => NativeMethods.VK_NONCONVERT,
+            KeyboardKey.Yen => NativeMethods.VK_OEM_5,
+           _ => 0
         };
     }
 
@@ -501,8 +511,13 @@ public static class InputUtilities
             108 => KeyboardKey.F21,
             109 => KeyboardKey.F22,
             110 => KeyboardKey.F23,
-            111 => KeyboardKey.F24,
-            
+            112 => KeyboardKey.Katakana,
+            115 => KeyboardKey.Ro,
+            118 => KeyboardKey.F24,
+            121 => KeyboardKey.Henkan,
+            123 => KeyboardKey.Muhenkan,
+            125 => KeyboardKey.Yen,
+
             //28 = enter or numpad enter
             //29 = left ctrl or right ctrl
             //53 = numpad slash or slash

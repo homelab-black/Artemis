@@ -419,4 +419,19 @@ public enum KeyboardKey
 
     /// <summary>The OEM Backslash key. On iso, it's the key between left shift and Z</summary>
     OemBackslash,
+
+    /// <summary>The Katakana/Hiragana key. On jis, it's the key between Henkan and right alt</summary>
+    Katakana,
+
+    /// <summary>The Ro key. On jis, it's the key between OemQuestion and rightshift</summary>
+    Ro,
+
+    /// <summary>The Henkan key. On jis, it's the key between sapce and Katakana</summary>
+    Henkan,
+
+    /// <summary>The Muhenkan key. On jis, it's the key between left alt and space</summary>
+    Muhenkan,
+
+    /// <summary>The Yen key. On iso, it's the key left of the Backspace key.</summary>
+    Yen,
 }
