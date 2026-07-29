@@ -160,7 +160,9 @@ public class WindowsInputProvider : InputProvider
                 _logger.Warning(e, "Failed to retrieve input device by its identifier");
             }
 
-        bool isDown = (keyboardData.Keyboard.Flags & RawKeyboardFlags.Up) == 0;
+        //bool isDown = (keyboardData.Keyboard.Flags & RawKeyboardFlags.Up) == 0;
+        // 「半角/全角」、「カタカナ/ひらがな」のキーリリースでは Flags が none のままとなるため、WindowMessageで制御するように変更
+        bool isDown = keyboardData.Keyboard.WindowMessage == 0x0100 || keyboardData.Keyboard.WindowMessage == 0x0104;
 
         OnKeyboardDataReceived(device, key, isDown);
         UpdateToggleStatus();

@@ -166,7 +166,7 @@ public static class InputKeyUtilities
             KeyboardKey.OemPeriod => LedId.Keyboard_PeriodAndBiggerThan,
             KeyboardKey.OemQuestion => LedId.Keyboard_SlashAndQuestionMark,
 //            KeyboardKey.OemTilde => LedId.Keyboard_GraveAccentAndTilde,
-//            KeyboardKey.OemTilde => LedId.Keyboard_Custom1,
+            KeyboardKey.OemTilde => LedId.Keyboard_Custom1,
 //            KeyboardKey.OemOpenBrackets => LedId.Keyboard_BracketLeft,
             KeyboardKey.OemOpenBrackets => LedId.Keyboard_Custom4,
 //            KeyboardKey.OemPipe => LedId.Keyboard_Backslash,
@@ -181,6 +181,7 @@ public static class InputKeyUtilities
             KeyboardKey.Henkan => LedId.Keyboard_Custom8,
             KeyboardKey.Muhenkan => LedId.Keyboard_Custom7,
             KeyboardKey.Yen => LedId.Keyboard_Custom3,
+            KeyboardKey.Katakana => LedId.Keyboard_Custom9,
             _ => LedId.Invalid
         };
     }

@@ -33,6 +33,9 @@
         <PackageReference Include="Microsoft.Windows.Compatibility" />
         <PackageReference Include="RawInput.Sharp" />
         <PackageReference Include="SkiaSharp.Vulkan.SharpVk" />
+        <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" />
+        <PackageReference Include="System.Security.Cryptography.Xml" />
+        <PackageReference Include="Tmds.DBus.Protocol" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Artemis.Core\Artemis.Core.csproj" />

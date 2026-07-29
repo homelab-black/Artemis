@@ -115,9 +115,12 @@ public class GeneralTabViewModel : RoutableScreen
         new RenderSettingViewModel("100%", 1)
     ];
 
+    // FPSが高いとメモリのLEDが応答しなくなり、OpenRGB側でデッドロックになる事象が発生したため、12 と 15 FPSを追加
     public ObservableCollection<RenderSettingViewModel> TargetFrameRates { get; } =
     [
         new RenderSettingViewModel("10 FPS", 10),
+        new RenderSettingViewModel("12 FPS", 12),
+        new RenderSettingViewModel("15 FPS", 15),
         new RenderSettingViewModel("20 FPS", 20),
         new RenderSettingViewModel("30 FPS", 30),
         new RenderSettingViewModel("45 FPS", 45),

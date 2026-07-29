@@ -24,4 +24,9 @@
         <Content Include="Icons/**" CopyToOutputDirectory="PreserveNewest" />
         <Content Include="Scripts/**" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" />
+      <PackageReference Include="System.Security.Cryptography.Xml" />
+      <PackageReference Include="Tmds.DBus.Protocol" />
+    </ItemGroup>
 </Project>
